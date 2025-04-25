@@ -59,7 +59,7 @@ The following `data-testid` attributes are used for automated testing:
 | Specialty filters | `filter-specialty-*` |
 | Sort options | `sort-fees`, `sort-experience` |
 
-> Note: Do **not reuse** test IDs across elements unless explicitly stated.
+
 
 ## 🧱 Tech Stack
 
