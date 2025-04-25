@@ -1,9 +1,8 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Doctor } from "@/types/doctor";
 import { cn } from "@/lib/utils";
-import { User, Video, Building2, Star, DollarSign, Clock } from "lucide-react";
+import { User, Video, Building2, Star, Clock } from "lucide-react";
 
 interface DoctorCardProps {
   doctor: Doctor;
@@ -73,9 +72,9 @@ const DoctorCard = ({ doctor }: DoctorCardProps) => {
               </div>
               
               <div className="flex items-center text-gray-600">
-                <DollarSign className="h-4 w-4 mr-2 text-green-600" />
+                <span className="h-4 w-4 mr-2 text-green-600">₹</span>
                 <span data-testid="doctor-fee" className="text-sm">
-                  ${doctor.fees} per consultation
+                  {doctor.fees} per consultation
                 </span>
               </div>
               
